@@ -1,8 +1,205 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap");
 
-body{
-    margin: 0px;
-    font-family: 'Poppins', sans-serif;
-    font-size:30px;
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+#body-header {
+  height: 65vh;
+  background-image: url(Img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal__list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.horizontal__list li {
+  display: inline-block;
+  margin: 0px 8px 8px 0px;
+  font-size: 1.2rem;
+}
+
+.horizontal__list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav__menu li a {
+  transition: color 0.5s, border-bottom 4s;
+}
+
+.nav__menu li a:hover {
+  color: #ecb365;
+  border-bottom: 1px solid #ecb365;
+}
+
+.text__center {
+  text-align: center;
+}
+
+/* Name Social Container */
+
+#name-social-container {
+  margin: 20vh;
+}
+
+#my-name {
+  font-size: 5rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0.1em 0.1em 0 hsl(200 50% 30%);
+  transition: 0.4s;
+}
+
+#my-name:hover {
+  text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc,
+    1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc,
+    3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc,
+    5px 6px 1px #eee, 7px 6px 1px #ccc;
+}
+
+.social__icons li a i {
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.social__icons li a i:hover {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+/* Section Classes */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+section:nth-child(even) {
+  background-color: ghostwhite;
+}
+
+section:nth-child(odd) {
+  background-color: white;
+}
+
+.section__heading {
+  width: auto;
+  padding: 20px 10px 10px;
+  font-weight: bold;
+}
+
+.section__heading span {
+  font-size: 40px;
+  color: #041c32;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+}
+
+/* About Section */
+
+#about {
+  height: auto;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#my-image {
+  height: 12rem;
+  width: 12rem;
+  margin: auto;
+  margin-top: -10vh;
+}
+
+#my-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#about-para {
+  padding: 10px;
+  width: 70%;
+  text-align: justify;
+  color: gray;
+  font-size: 1.5rem;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+/* Skills Section */
+
+.skills__display{
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill__progress{
+    display: flex;
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+    margin: 25px;
+    overflow: hidden;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.skill__progress-bar{
+    background-color: #073B4C;
+    width: 100%;
+    align-self: center;
+}
+
+.skill__progress-bar p{
+    color: white;
+    width: 11rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+    /* Skills Name and percentage */
+
+#skill-1{
+    width: 70%;
+    background-color: #EF476F;
+}
+
+#skill-2{
+    width: 30%;
+    background-color: #FFD166;
+}
+
+#skill-3{
+    width: 50%;
+    background-color: #06D6A0;
+}
+
+#skill-4{
+    width: 90%;
+    background-color: #118AB2;
 }
 
