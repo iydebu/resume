@@ -81,8 +81,7 @@ body {
 }
 
 .social__icons li a i:hover {
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 /* Section Classes */
@@ -338,7 +337,7 @@ section:nth-child(odd) {
 
 /* Contact Form */
 
-#contact .section__heading span{
+#contact .section__heading span {
   color: #fff;
 }
 
@@ -348,23 +347,23 @@ section:nth-child(odd) {
   padding-bottom: 40px;
 }
 
-#contact-form{
+#contact-form {
   margin-left: 20%;
 }
 
-.contact__container{
+.contact__container {
   display: flex;
 }
 
-.contact__form-container{
-  width:50%;
-}
-
-.my__details-container{
+.contact__form-container {
   width: 50%;
 }
 
-#my-details-container{
+.my__details-container {
+  width: 50%;
+}
+
+#my-details-container {
   width: 35%;
   margin-left: 6%;
 }
@@ -373,25 +372,25 @@ section:nth-child(odd) {
   font-size: 1rem;
 }
 
-.my__details-info-container{
+.my__details-info-container {
   margin-bottom: 20px;
   font-size: 1rem;
 }
 
-.my__details-info-container span{
+.my__details-info-container span {
   margin-left: 0.5rem;
 }
 
-.my__details-container p{
+.my__details-container p {
   font-size: 1rem;
 }
 
 #contact-form input,
-textarea{
+textarea {
   max-width: 90%;
   margin: 15px;
   padding: 4px 10px;
-  border:  0px solid transparent;
+  border: 0px solid transparent;
   border-bottom: 2px solid white;
   color: white;
   background: transparent;
@@ -400,9 +399,8 @@ textarea{
   font-size: 1.2rem;
 }
 
-
 #contact-form input::placeholder,
-textarea::placeholder{
+textarea::placeholder {
   color: #eee;
 }
 
@@ -419,15 +417,15 @@ textarea::placeholder{
   line-height: 1;
   padding: 0.8em;
   text-transform: uppercase;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-#contact-form button[type="submit"]:hover{
+#contact-form button[type="submit"]:hover {
   background-color: white;
   color: #041c32;
 }
 
-#contact .social__icons li a i{
+#contact .social__icons li a i {
   font-size: 1.2rem;
   margin: 40px 10px 10px;
 }
@@ -435,33 +433,65 @@ textarea::placeholder{
 input:focus,
 select:focus,
 textarea:focus,
-button:focus{
+button:focus {
   outline: none;
 }
 
 /* Common Margin Classes */
 
-.m0 {margin: 0;}
-.mb75px {margin-bottom: 75px;}
-.mb50px {margin-bottom: 50px;}
-
+.m0 {
+  margin: 0;
+}
+.mb75px {
+  margin-bottom: 75px;
+}
+.mb50px {
+  margin-bottom: 50px;
+}
 
 /* Colour Class */
-.red{background-color: #ef476f;}
-.yellow{background-color: #ffd166;}
-.green{background-color: #06d6a0;}
-.blue{background-color: #118ab2;}
+.red {
+  background-color: #ef476f;
+}
+.yellow {
+  background-color: #ffd166;
+}
+.green {
+  background-color: #06d6a0;
+}
+.blue {
+  background-color: #118ab2;
+}
 
 /* Percentage Classes */
 
-.hundred__percent {width: 100%;}
-.ninety__percent {width: 90%;}
-.eighth__percent {width: 80%;}
-.seventy__percent {width: 70%;}
-.sixty__percent {width: 60%;}
-.fifty__percent {width: 50%;}
-.forty__percent {width: 40%;}
-.thirty__percent {width: 30%;}
-.twenty__percent {width: 20%;}
-.ten__percent {width: 10%;}
-
+.hundred__percent {
+  width: 100%;
+}
+.ninety__percent {
+  width: 90%;
+}
+.eighth__percent {
+  width: 80%;
+}
+.seventy__percent {
+  width: 70%;
+}
+.sixty__percent {
+  width: 60%;
+}
+.fifty__percent {
+  width: 50%;
+}
+.forty__percent {
+  width: 40%;
+}
+.thirty__percent {
+  width: 30%;
+}
+.twenty__percent {
+  width: 20%;
+}
+.ten__percent {
+  width: 10%;
+}
