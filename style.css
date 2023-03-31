@@ -12,7 +12,7 @@ body {
 
 #body-header {
   height: 65vh;
-  background-image: url(Img/bg.jpg);
+  background-image: url(Img/flat-bg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
