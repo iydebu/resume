@@ -10,15 +10,68 @@ body {
   font-size: 30px;
 }
 
+body::-webkit-scrollbar { 
+  display: none; 
+}
+
 #body-header {
   height: 65vh;
   background-image: url(Img/flat-bg.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 1.2rem;
+  padding-top: 0rem;
 }
 
 /* Horizontal Lists */
+.bars{
+  color: white;
+  display: none;
+}
+
+.bars i {
+  font-size: 2rem;
+}
+
+.dropdown__list{
+  border-radius: 0 0rem 3rem 0rem;
+  display: none;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 4px 8px 1px #041c32;
+  width: 100%;
+}
+
+.dropdown__list ul{
+  margin: 0.2rem 0.2rem;
+  text-align: left;
+}
+
+.dropdown__menu:hover .dropdown__list{
+  display: block;
+  position: absolute;
+  right: 5%;
+}
+
+.dropdown__list li{
+  margin: 0.5rem 0px;
+}
+
+.no__list-style{
+  list-style: none;
+}
+
+.no__list-style li {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.no__list-style li a{
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
 
 .horizontal__list {
   list-style: none;
@@ -36,6 +89,7 @@ body {
   color: white;
   text-decoration: none;
 }
+
 
 .nav__menu li a {
   transition: color 0.5s, border-bottom 4s;
@@ -80,7 +134,8 @@ body {
 }
 
 .social__icons li a i:hover {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 /* Section Classes */
@@ -346,7 +401,6 @@ section:nth-child(odd) {
   padding-bottom: 40px;
 }
 
-
 .contact__container {
   display: flex;
   column-gap: 2rem;
@@ -435,6 +489,20 @@ button:focus {
   outline: none;
 }
 
+/* Common Text Align Classes */
+
+.text-right{
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 /* Common Margin Classes */
 
 .m0 {
@@ -496,62 +564,61 @@ button:focus {
 
 /* Media queries */
 
-@media screen and (max-width: 768px){
-
-  html{
+@media screen and (max-width: 768px) {
+  html {
     font-size: 15px;
   }
 
-  .horizontal__list li{
+  .horizontal__list li {
     margin: 0px 5px 5px 0px;
   }
 
-  #my-name{
+  #my-name {
     font-size: 4rem;
   }
 
-  .social__icons li a i{
-    font-size: 1.75rem;;
+  .social__icons li a i {
+    font-size: 1.75rem;
   }
 
-  #my-image{
+  #my-image {
     height: 10rem;
     width: 10rem;
   }
 
-  #about-para{
+  #about-para {
     width: 90%;
     font-size: 1.2rem;
   }
 
-  .skills__display{
+  .skills__display {
     width: 90%;
   }
 
-  .skill__progress{
+  .skill__progress {
     width: 14rem;
     height: 2.5rem;
   }
 
-  .timeline__box{
+  .timeline__box {
     width: 80%;
     margin-bottom: 2rem;
     left: 0% !important;
   }
 
-  .timeline__box::after{
+  .timeline__box::after {
     right: 0% !important;
     left: 121% !important;
   }
-  
+
   #timeline-divider {
     left: 100%;
   }
 
-  .portfolio__image-container{
+  .portfolio__image-container {
     max-width: 500px;
   }
-  
+
   .contact__container {
     flex-direction: column;
     align-items: center;
@@ -560,7 +627,7 @@ button:focus {
   .contact__form-container {
     width: 90%;
   }
-  
+
   .my__details-container {
     width: 90%;
   }
@@ -580,28 +647,37 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 577px){
+@media screen and (max-width: 577px) {
+
+  .bars{
+    display: block;
+  }
+
+  .nav__menu{
+    display: none;
+  }
+
   #name-social-container {
     margin: 0vh;
   }
 
-  #my-name{
+  #my-name {
     font-size: 3rem;
   }
 
-  .social__icons li a i{
+  .social__icons li a i {
     font-size: 0.75;
   }
 
-  .section__heading{
+  .section__heading {
     padding: 10px 5px 5px;
   }
 
-  .section__heading span{
+  .section__heading span {
     font-size: 30px;
   }
 
-  .skills__display{
+  .skills__display {
     width: 100%;
     margin-bottom: 0px;
   }
@@ -610,23 +686,23 @@ button:focus {
     width: 100%;
   }
 
-  .timeline{
+  .timeline {
     width: 85%;
     margin: auto;
   }
 
-  .timeline__box{
+  .timeline__box {
     width: 85%;
   }
 
-  .timeline__box::after{
+  .timeline__box::after {
     right: 0% !important;
     left: 112% !important;
   }
 
-  #portfolio-container{
+  #portfolio-container {
     padding: 0;
-  } 
+  }
 
   .m0 {
     margin: 0;
