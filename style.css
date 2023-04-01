@@ -15,7 +15,6 @@ body {
   background-image: url(Img/flat-bg.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment:scroll;
   padding-top: 1.2rem;
 }
 
