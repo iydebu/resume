@@ -54,7 +54,7 @@ body {
 /* Name Social Container */
 
 #name-social-container {
-  margin: 20vh;
+  margin: 10vh;
 }
 
 #my-name {
@@ -347,12 +347,11 @@ section:nth-child(odd) {
   padding-bottom: 40px;
 }
 
-#contact-form {
-  margin-left: 20%;
-}
 
 .contact__container {
   display: flex;
+  column-gap: 2rem;
+  margin: 0 5%;
 }
 
 .contact__form-container {
@@ -494,4 +493,149 @@ button:focus {
 }
 .ten__percent {
   width: 10%;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px){
+
+  html{
+    font-size: 15px;
+  }
+
+  .horizontal__list li{
+    margin: 0px 5px 5px 0px;
+  }
+
+  #my-name{
+    font-size: 4rem;
+  }
+
+  .social__icons li a i{
+    font-size: 1.75rem;;
+  }
+
+  #my-image{
+    height: 10rem;
+    width: 10rem;
+  }
+
+  #about-para{
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .skills__display{
+    width: 90%;
+  }
+
+  .skill__progress{
+    width: 14rem;
+    height: 2.5rem;
+  }
+
+  .timeline__box{
+    width: 80%;
+    margin-bottom: 2rem;
+    left: 0% !important;
+  }
+
+  .timeline__box::after{
+    right: 0% !important;
+    left: 121% !important;
+  }
+  
+  #timeline-divider {
+    left: 100%;
+  }
+
+  .portfolio__image-container{
+    max-width: 500px;
+  }
+  
+  .contact__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__form-container {
+    width: 90%;
+  }
+  
+  .my__details-container {
+    width: 90%;
+  }
+
+  #contact-form {
+    margin-left: 0%;
+  }
+
+  .m0 {
+    margin: 0;
+  }
+  .mb75px {
+    margin-bottom: 55px;
+  }
+  .mb50px {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 577px){
+  #name-social-container {
+    margin: 0vh;
+  }
+
+  #my-name{
+    font-size: 3rem;
+  }
+
+  .social__icons li a i{
+    font-size: 0.75;
+  }
+
+  .section__heading{
+    padding: 10px 5px 5px;
+  }
+
+  .section__heading span{
+    font-size: 30px;
+  }
+
+  .skills__display{
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .skill__progress {
+    width: 100%;
+  }
+
+  .timeline{
+    width: 85%;
+    margin: auto;
+  }
+
+  .timeline__box{
+    width: 85%;
+  }
+
+  .timeline__box::after{
+    right: 0% !important;
+    left: 112% !important;
+  }
+
+  #portfolio-container{
+    padding: 0;
+  } 
+
+  .m0 {
+    margin: 0;
+  }
+  .mb75px {
+    margin-bottom: 40px;
+  }
+  .mb50px {
+    margin-bottom: 0px;
+  }
 }
