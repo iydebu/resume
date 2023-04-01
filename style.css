@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
   background-image: url(Img/flat-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   padding-top: 0rem;
 }
